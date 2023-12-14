@@ -1,0 +1,52 @@
+.App {
+  padding-top: 2rem;
+}
+
+.gameboard {
+  width: 500px;
+  height: 540px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.gameboard__row {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.gameboard__row--selected {
+  outline: 1px solid;
+  border-radius: 4px;
+  outline-offset: 3px;
+  outline-width: 2px;
+}
+
+.gameboard__row__tile {
+  width: 100px;
+  height: 100px;
+  border: 1px solid lightgray;
+}
+
+.gameboard__row__tile--close {
+  background-color: yellow;
+}
+
+.gameboard__row__tile--correct {
+  background-color: lightgreen;
+}
+
+.gameboard__row__tile--incorrect {
+  background-color: lightgray;
+}
+
+.gameboard__row__tile--text {
+  font-size: 5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.gameboard__row__tile + .gameboard__row__tile {
+  margin-left: 0.5rem;
+}
